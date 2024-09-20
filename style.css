@@ -1,41 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+body{
+    font-family: "Inconsolata";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+    background-color: aliceblue;
+}
+
+
 .calculator-container{
     width: 400px;
     height: 500px;
-    border: 10px solid rgb(139, 143, 144);
-    margin: 200px auto;
+    border: 10px solid rgb(147, 155, 158);
+    border-radius: 10px;
+    
 }
 
 .calculator-grid{
     display: flex;
     flex-wrap: wrap;
+    background-color: #2d1e90;
 }
 
 #display {
     width: 100%;
     height: 100px;
-    background-color: #f0f0f0;
-    border: 2px solid #ccc;
+    background-color: #c0b4b451;
+    border: 3px solid #847f7f;
     text-align: right;
-    font-size: 70px;
-    font-weight: 900px;
+    font-size: 80px;
+    font-weight: 500;
     padding: 10px;
     box-sizing:border-box;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 
 button{
     flex: 1 0 25%;
     height: 80px;
-    font-size: 25px;
+    font-size: 30px;
     border: 2px solid #ccc;
     background-color: #c2c2cc69;
+    font-family: inherit;
     
+}
+
+
+button:active {
+    background-color: #abb6ba; 
 }
 
 .calculator-grid button.span-two{
     flex-basis: 50%;
 }
 
+.number,
+.decimal{
+    background-color:#249a9a;
+    color: rgb(255, 255, 255);
+}
 
 
